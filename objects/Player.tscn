@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5l8la6pd36ap"]
+
+[ext_resource type="Script" path="res://code/Player.gd" id="1_v3jcx"]
+[ext_resource type="Texture2D" uid="uid://m6ks4gt43l0j" path="res://sprites/playerShip1_blue.png" id="1_y8hxd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oegem"]
+radius = 40.0
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource( "1_v3jcx" )
+
+[node name="PlayerShip1Blue" type="Sprite2D" parent="."]
+skew = 4.37114e-08
+texture = ExtResource( "1_y8hxd" )
+script = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( "CircleShape2D_oegem" )
+script = null
