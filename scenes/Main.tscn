@@ -1,49 +1,24 @@
-[gd_scene load_steps=7 format=3 uid="uid://dd8uyeymnx4ir"]
+[gd_scene load_steps=3 format=3 uid="uid://dd8uyeymnx4ir"]
 
-[ext_resource type="Texture2D" uid="uid://dhjaoi1bo2gmf" path="res://sprites/meteorBrown_big2.png" id="2_he334"]
-[ext_resource type="Texture2D" uid="uid://bbnk2v2f3kaaa" path="res://sprites/meteorBrown_big4.png" id="3_8iaq4"]
-[ext_resource type="Texture2D" uid="uid://cg5irxbbwslgl" path="res://sprites/meteorBrown_big3.png" id="4_ohvdh"]
-[ext_resource type="Texture2D" uid="uid://m44i5itg6tc4" path="res://sprites/meteorBrown_med3.png" id="5_cgyve"]
-[ext_resource type="Texture2D" uid="uid://danibtcshmd4v" path="res://sprites/meteorBrown_small1.png" id="6_l7ymu"]
+[ext_resource type="PackedScene" uid="uid://2sjtxibx761h" path="res://objects/Asteroid.tscn" id="2_5dhhb"]
 [ext_resource type="PackedScene" uid="uid://b5l8la6pd36ap" path="res://objects/Player.tscn" id="7_0d8o5"]
 
 [node name="Main" type="Node2D"]
-script = null
-
-[node name="MeteorBrownBig2" type="Sprite2D" parent="."]
-position = Vector2(175, 476)
-texture = ExtResource( "2_he334" )
-script = null
-
-[node name="MeteorBrownBig4" type="Sprite2D" parent="."]
-position = Vector2(818, 182)
-texture = ExtResource( "3_8iaq4" )
-script = null
-
-[node name="MeteorBrownBig3" type="Sprite2D" parent="."]
-position = Vector2(417, 142)
-texture = ExtResource( "4_ohvdh" )
-script = null
-
-[node name="MeteorBrownBig5" type="Sprite2D" parent="."]
-position = Vector2(513, 488)
-texture = ExtResource( "4_ohvdh" )
-script = null
-
-[node name="MeteorBrownMed3" type="Sprite2D" parent="."]
-position = Vector2(318, 312)
-texture = ExtResource( "5_cgyve" )
-script = null
-
-[node name="MeteorBrownSmall1" type="Sprite2D" parent="."]
-position = Vector2(591, 334)
-texture = ExtResource( "6_l7ymu" )
-script = null
-
-[node name="MeteorBrownMed4" type="Sprite2D" parent="."]
-position = Vector2(619, 230)
-texture = ExtResource( "5_cgyve" )
-script = null
 
 [node name="Player" parent="." instance=ExtResource( "7_0d8o5" )]
-position = Vector2(201, 163)
+position = Vector2(529, 283)
+
+[node name="Asteroid" parent="." instance=ExtResource( "2_5dhhb" )]
+position = Vector2(131, 126)
+
+[node name="Asteroid2" parent="." instance=ExtResource( "2_5dhhb" )]
+position = Vector2(364, 85)
+
+[node name="Asteroid3" parent="." instance=ExtResource( "2_5dhhb" )]
+position = Vector2(733, 108)
+
+[node name="Asteroid4" parent="." instance=ExtResource( "2_5dhhb" )]
+position = Vector2(785, 384)
+
+[node name="Asteroid5" parent="." instance=ExtResource( "2_5dhhb" )]
+position = Vector2(283, 480)

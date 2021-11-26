@@ -10,10 +10,7 @@ radius = 40.0
 script = ExtResource( "1_v3jcx" )
 
 [node name="PlayerShip1Blue" type="Sprite2D" parent="."]
-skew = 4.37114e-08
 texture = ExtResource( "1_y8hxd" )
-script = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( "CircleShape2D_oegem" )
-script = null
