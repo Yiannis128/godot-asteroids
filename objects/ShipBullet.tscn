@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://crj2bplh4l0kk"]
+
+[ext_resource type="Script" path="res://code/ShipBullet.gd" id="1_2pd3o"]
+[ext_resource type="Texture2D" uid="uid://ck84gkocidlgp" path="res://sprites/meteorBrown_tiny1.png" id="1_ililm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2li41"]
+
+[node name="ShipBullet" type="Area2D"]
+script = ExtResource( "1_2pd3o" )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( "CircleShape2D_2li41" )
+
+[node name="MeteorBrownTiny1" type="Sprite2D" parent="."]
+texture = ExtResource( "1_ililm" )
