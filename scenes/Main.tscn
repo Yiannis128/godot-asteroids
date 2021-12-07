@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dd8uyeymnx4ir"]
+[gd_scene load_steps=4 format=3 uid="uid://dd8uyeymnx4ir"]
 
 [ext_resource type="PackedScene" uid="uid://2sjtxibx761h" path="res://objects/Asteroid.tscn" id="2_5dhhb"]
+[ext_resource type="PackedScene" uid="uid://dvuaouy4tlq4e" path="res://objects/AsteroidManager.tscn" id="3_gcj0q"]
 [ext_resource type="PackedScene" uid="uid://b5l8la6pd36ap" path="res://objects/Player.tscn" id="7_0d8o5"]
 
 [node name="Main" type="Node2D"]
@@ -9,16 +10,28 @@
 position = Vector2(529, 283)
 
 [node name="Asteroid" parent="." instance=ExtResource( "2_5dhhb" )]
-position = Vector2(131, 126)
+position = Vector2(382, 280)
 
 [node name="Asteroid2" parent="." instance=ExtResource( "2_5dhhb" )]
-position = Vector2(364, 85)
+position = Vector2(519, 146)
 
 [node name="Asteroid3" parent="." instance=ExtResource( "2_5dhhb" )]
-position = Vector2(733, 108)
+position = Vector2(873, 157)
+
+[node name="Asteroid6" parent="." instance=ExtResource( "2_5dhhb" )]
+position = Vector2(873, 389)
+
+[node name="Asteroid7" parent="." instance=ExtResource( "2_5dhhb" )]
+position = Vector2(178, 377)
+
+[node name="Asteroid8" parent="." instance=ExtResource( "2_5dhhb" )]
+position = Vector2(161, 189)
 
 [node name="Asteroid4" parent="." instance=ExtResource( "2_5dhhb" )]
-position = Vector2(785, 384)
+position = Vector2(687, 275)
 
 [node name="Asteroid5" parent="." instance=ExtResource( "2_5dhhb" )]
-position = Vector2(283, 480)
+position = Vector2(535, 420)
+
+[node name="AsteroidManager" parent="." instance=ExtResource( "3_gcj0q" )]
+target_path = NodePath("../Player")
