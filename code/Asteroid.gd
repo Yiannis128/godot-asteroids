@@ -6,6 +6,7 @@ func _ready() -> void:
     connect("area_entered", area_entered)
 
 func area_entered(area : Area2D) -> void:
+    PlayerStats.player_score += 1
     queue_free()
 
 func _physics_process(delta: float) -> void:
