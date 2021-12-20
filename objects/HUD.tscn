@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8hxdtxixhx3q"]
+
+[ext_resource type="Script" path="res://code/HUD.gd" id="1_d2dlp"]
+
+[node name="HUD" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( "1_d2dlp" )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreText" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 16
+text = "Score:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" type="Label" parent="."]
+offset_left = 52.0
+offset_right = 99.0
+offset_bottom = 26.0
+theme_override_font_sizes/font_size = 16
+text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
