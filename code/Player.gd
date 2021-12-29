@@ -1,3 +1,4 @@
+class_name PlayerShip
 extends CharacterBody2D
 
 @export var turn_speed : float = 3
@@ -5,6 +6,13 @@ extends CharacterBody2D
 @export var fire_cooldown : float = 0.75
 var fire_cooldown_left : float = 0
 const bulletPackedScene : PackedScene = preload("res://objects/ShipBullet.tscn")
+
+func _ready() -> void:
+    $Area2D.connect("area_entered", area_entered)
+
+func area_entered(node : Area2D) -> void:
+    if !(node is ShipBullet):
+        PlayerStats.player_dead()
 
 func fire_bullet():
     var bullet : Node = bulletPackedScene.instantiate()
@@ -37,5 +45,3 @@ func _physics_process(delta: float) -> void:
     # We now rotate the ship left or right depending on if move_dir is a
     # positive or negative number.
     rotate(move_dir * delta)
-    
-    

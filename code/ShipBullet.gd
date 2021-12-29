@@ -1,3 +1,4 @@
+class_name ShipBullet
 extends Area2D
 
 var speed : float = 500
